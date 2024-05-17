@@ -34,4 +34,14 @@
     <servlet-name>ControladorExcel</servlet-name>
     <url-pattern>/ControladorExcel</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ElServlet</display-name>
+    <servlet-name>ElServlet</servlet-name>
+    <servlet-class>ElServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ElServlet</servlet-name>
+    <url-pattern>/ElServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

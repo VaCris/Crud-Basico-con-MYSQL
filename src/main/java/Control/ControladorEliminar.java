@@ -26,6 +26,8 @@ public class ControladorEliminar extends HttpServlet {
 		   String nombre = request.getParameter("nombre");
 	       Servicio servicio = new Servicio();
 	       servicio.eliminarInvitado(nombre);
+	       
+	       request.getRequestDispatcher("Confirmacion.jsp").forward(request, response);
 		//doGet(request, response);
 	}
 
