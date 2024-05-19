@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
-<%@ page import="Clases.Invitado" %>
-<%@ page import="Clases.Servicio" %>
+<%@ page import="Modelo.Invitado" %>
+<%@ page import="Modelo.Servicio" %>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <!DOCTYPE html>
 <html>
@@ -23,6 +23,7 @@
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Apellido</th>
+                 
                 </tr>
             </thead>
             <tbody>
@@ -40,6 +41,7 @@
                 session.setAttribute("invitado", listaInvitados);
                 %>
             </tbody>
+            
         </table>
     </div>
 </body>

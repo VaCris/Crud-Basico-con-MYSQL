@@ -44,4 +44,14 @@
     <servlet-name>ElServlet</servlet-name>
     <url-pattern>/ElServlet</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ControladorEditar</display-name>
+    <servlet-name>ControladorEditar</servlet-name>
+    <servlet-class>Control.ControladorEditar</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControladorEditar</servlet-name>
+    <url-pattern>/ControladorEditar</url-pattern>
+  </servlet-mapping>
 </web-app>

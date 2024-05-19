@@ -13,9 +13,10 @@
 		<h1>Bienvenido a AHORROPERU</h1>
 		<nav>
 			<ul>
-				<li><a href="Vista/Consultar.jsp">Consultar Invitados</a></li>
+				<li><a href="Consultar.jsp">Consultar Invitados</a></li>
 				<li><a href="Agregar.jsp">Agregar Invitado</a></li>
-				<li><a href="Eliminar.jsp">Eliminar Invitado</a></li>				
+				<li><a href="Eliminar.jsp">Eliminar Invitado</a></li>
+				<li><a href="Editar.jsp">Editar Invitado</a></li>					
 			</ul>
 		</nav>
 	</header>

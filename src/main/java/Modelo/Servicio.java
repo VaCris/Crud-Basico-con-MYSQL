@@ -1,7 +1,9 @@
-package Clases;
+package Modelo;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
+import com.mysql.cj.xdevapi.SelectStatement;
 
 public class Servicio {
     private Connection connection;
@@ -39,9 +41,31 @@ public class Servicio {
             PreparedStatement statement = connection.prepareStatement(sql);
             statement.setString(1, nombre);
             statement.executeUpdate();
+            
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    public void actualizarDatos(int id,String nombre, String apellido) throws SQLException{
+    	String sql = "SELECT * FROM invitados WHERE id = ?";
+    	String sqlu = "UPDATE invitados SET nombre = ? , apellido = ? WHERE id = ?";
+    	try(PreparedStatement statement = connection.prepareStatement(sql);
+    		PreparedStatement ustatement = connection.prepareStatement(sqlu);){   		    		
+            statement.setInt(1, id);
+    		statement.executeQuery();
+    		
+    		if(((ResultSet) ustatement).next()) {
+    			ustatement.setString(1,nombre);
+    			ustatement.setString(2,apellido);
+    			ustatement.setInt(3,id);
+    			ustatement.executeUpdate();
+    		}
+    		
+    		    		
+    		}catch(SQLException e) {
+    			e.printStackTrace();
+    		}
+    	
     }
     
     public List<Invitado> consultarInvitados() {

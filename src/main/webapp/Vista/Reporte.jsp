@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.List" %>
-<%@ page import="Clases.Invitado" %>
+<%@ page import="Modelo.Invitado" %>
 
-<%@ page import="Clases.Servicio" %>
+<%@ page import="Modelo.Servicio" %>
 <!DOCTYPE html>
 <html>
 <head>
