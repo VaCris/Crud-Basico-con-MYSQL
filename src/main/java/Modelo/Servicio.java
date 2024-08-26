@@ -12,9 +12,9 @@ public class Servicio {
        
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = "jdbc:mysql://localhost:3307/ahorroperu";
-            String user = "root";
-            String password = "admin";
+            String url = "jdbc:mysql://localhost:3307/db_name";
+            String user = "";
+            String password = "";
             connection = DriverManager.getConnection(url, user, password);
             System.out.println("Conecto");
         } catch (ClassNotFoundException | SQLException e) {
